@@ -2,33 +2,37 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Web</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Raleway:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Web</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Raleway:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-    <main>
-        <section id="confirmacion" class="section">
-            <h2 class="section-title">Confirmación de asistencia</h2>
-            <form id="form-asistencia" class="formulario">
-                <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
-                <div class="form-opciones">
-                    <label><input type="radio" name="asistencia" value="si" required> ¡Claro que sí!</label>
-                    <label><input type="radio" name="asistencia" value="no"> Lamento no poder estar</label>
-                </div>
-                <button type="submit" class="btn">Enviar confirmación</button>
-                <p id="mensaje-envio" class="mensaje oculto">¡Gracias por confirmar tu asistencia!</p>
-            </form>
-        </section>
-    </main>
+  <main>
+    <section id="confirmacion" class="section">
+      <h2 class="section-title">Confirmación de asistencia</h2>
+      <form id="form-asistencia" class="formulario">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        <div class="form-opciones">
+          <label><input type="radio" name="asistencia" value="sí" required> Asistiré</label>
+          <label><input type="radio" name="asistencia" value="no"> No podré asistir</label>
+        </div>
+
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+
+      <div id="mensaje-envio" class="mensaje oculto">¡Gracias por confirmar!</div>
+
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
