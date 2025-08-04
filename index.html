@@ -5,13 +5,117 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wedding Web</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
   <link
-    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Raleway:wght@400;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-  <div>
-    <h1>¡Estás invitado a nuestra boda!</h1>
+  <div class="save-the-date-container">
+    <!-- Decorative elements -->
+    <div class="decoration-element decoration-1">
+      <i class="fas fa-leaf"></i>
+    </div>
+    <div class="decoration-element decoration-2">
+      <i class="fas fa-seedling"></i>
+    </div>
+    <div class="decoration-element decoration-3">
+      <i class="fas fa-leaf"></i>
+    </div>
+    <div class="decoration-element decoration-4">
+      <i class="fas fa-spa"></i>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <div class="couple-photo-placeholder">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content-section">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            <!-- Names Section -->
+            <div class="names-container">
+              <div class="names-background-image"></div>
+              <div class="main-names">
+                <div class="bride-name">Alejandro</div>
+                <div class="divider d-none d-sm-block"></div>
+                <div class="groom-name">Carolina</div>
+              </div>
+              <div class="last-names">
+                <div class="bride-lastname">Apellido</div>
+                <div class="groom-lastname">Apellido</div>
+              </div>
+            </div>
+
+            <!-- Botanical Element -->
+            <div class="botanical-element">
+              <div class="leaf-icon">
+                <i class="fas fa-leaf"></i>
+              </div>
+            </div>
+
+            <!-- Save The Date Text -->
+            <div class="save-the-date-text">
+              RESERVA LA FECHA
+            </div>
+
+            <!-- Countdown Section -->
+            <div class="countdown-container">
+              <div class="countdown-timer" id="countdown">
+                <div class="countdown-item">
+                  <span class="countdown-number" id="days">250</span>
+                  <div class="countdown-label">días</div>
+                </div>
+                <div class="countdown-item">
+                  <span class="countdown-number" id="hours">00</span>
+                  <div class="countdown-label">horas</div>
+                </div>
+                <div class="countdown-item">
+                  <span class="countdown-number" id="minutes">00</span>
+                  <div class="countdown-label">min</div>
+                </div>
+                <div class="countdown-item">
+                  <span class="countdown-number" id="seconds">00</span>
+                  <div class="countdown-label">seg</div>
+                </div>
+              </div>
+              <div class="countdown-message">hasta nuestro gran día</div>
+              <a href="#" class="confirm-button">Confirmar Asistencia</a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links">
+              <a href="#" class="social-icon" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+
+            <!-- Website Link -->
+            <a href="#" class="website">www.bodas-sophia-ashton.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
+
+</html>
