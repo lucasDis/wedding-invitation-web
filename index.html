@@ -31,7 +31,7 @@
     <!-- Hero Section -->
     <div class="hero-section">
       <div class="couple-photo-placeholder">
-        <i class="fas fa-heart"></i>
+        <img src="./images/married-main.webp" alt="Foto de los novios" class="couple-photo-img">
       </div>
     </div>
 
@@ -56,14 +56,7 @@
 
             <!-- Botanical Element -->
             <div class="botanical-element">
-              <div class="leaf-icon">
-                <i class="fas fa-leaf"></i>
-              </div>
-            </div>
-
-            <!-- Save The Date Text -->
-            <div class="save-the-date-text">
-              RESERVA LA FECHA
+              <img src="./images/main-flower-bottom.webp" alt="Botanical Flower" class="main-flower-bottom">
             </div>
 
             <!-- Countdown Section -->
@@ -113,6 +106,53 @@
       </div>
     </div>
   </div>
+
+  <!-- Sección de Comentarios -->
+  <section id="comentarios" class="section">
+    <h2 class="section-title">Palabras de los novios</h2>
+    <div class="comentarios">
+      <blockquote>
+        "Cada momento juntos nos llevó hasta aquí. Gracias por ser parte de nuestra historia."
+        <footer>— Lucas</footer>
+      </blockquote>
+      <blockquote>
+        "Este día no sería igual sin quienes más queremos a nuestro lado. ¡Te esperamos!"
+        <footer>— Valentina</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Galería -->
+  <section id="galeria" class="section">
+    <h2 class="section-title">Nuestra historia en fotos</h2>
+    <div class="galeria-grid">
+      <img src="assets/img1.jpg" alt="Foto 1" class="galeria-img" data-index="0">
+      <img src="assets/img2.jpg" alt="Foto 2" class="galeria-img" data-index="1">
+      <img src="assets/img3.jpg" alt="Foto 3" class="galeria-img" data-index="2">
+    </div>
+  </section>
+
+  <!-- Modal Galería -->
+  <div id="modal" class="modal hidden">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img" />
+    <p id="modal-text"></p>
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+  </div>
+
+  <!-- Agradecimiento final -->
+  <section id="agradecimiento" class="section">
+    <h2 class="section-title">Gracias por estar</h2>
+    <p class="agradecimiento-text">
+      Si estás leyendo esto, es porque sos alguien realmente importante para nosotros.
+      Gracias por compartir este momento inolvidable.
+    </p>
+  </section>
+
+  <!-- Botón volver arriba -->
+  <a href="#" class="volver-arriba" title="Volver al inicio">⬆</a>
+
 
   <!-- Bootstrap JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
