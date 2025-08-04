@@ -375,10 +375,10 @@ body {
 .comentarios h2 {
     font-family: 'Libre Baskerville', serif;
     font-size: 2.5rem;
-    color: var(--dark-green);
+    color: #1c1c1c;
     text-align: center;
     margin-bottom: 2rem;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .comentarios blockquote {
@@ -431,30 +431,41 @@ body {
     z-index: 1000;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    color: white;
-    text-align: center;
     padding: 2rem;
 }
 
 .modal-content {
-    max-width: 90%;
-    max-height: 60vh;
+    max-height: 80vh;
+    max-width: 90vw;
+    object-fit: contain;
     border-radius: 10px;
-    margin-bottom: 1rem;
 }
 
-.modal a.prev,
-.modal a.next {
+.modal .prev,
+.modal .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 2rem;
-    cursor: pointer;
     color: white;
-    margin: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.modal .prev {
+    left: 1rem;
+}
+
+.modal .next {
+    right: 1rem;
 }
 
 .modal .close {
@@ -474,7 +485,7 @@ body {
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 
@@ -513,6 +524,7 @@ body {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    z-index: 3;
 }
 
 .agradecimiento-text {
@@ -521,14 +533,6 @@ body {
     text-align: center;
     font-size: 1.2rem;
     color: #fff;
-}
-
-.mi-footer {
-  background-image: url('../images/leaf-fotter-main.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll; /* este valor hace que no sea fijo */
 }
 
 /* Background Animation */
@@ -551,6 +555,11 @@ body {
     animation: float 10s ease-in-out infinite;
 }
 
+.ti-agradecimiento {
+
+    color: #f0ebe0;
+}
+
 /* Volver arriba */
 .volver-arriba {
     position: fixed;
@@ -560,7 +569,8 @@ body {
     color: white;
     padding: 0.8rem;
     border-radius: 50%;
-    font-size: 1.5rem;
+    pointer-events: none;
+    font-size: 1.2rem;
     display: none;
     transition: opacity 0.3s, background 0.3s;
     z-index: 999;

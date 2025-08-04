@@ -1,19 +1,12 @@
-// main.js
+
 document.addEventListener("DOMContentLoaded", () => {
   // -------- GALERÍA CON MODAL -------- //
   const imagenes = document.querySelectorAll(".galeria-img");
   const modal = document.getElementById("modal");
   const modalImg = document.getElementById("modal-img");
-  const modalText = document.getElementById("modal-text");
   const closeModal = document.querySelector(".modal .close");
   const prevBtn = document.querySelector(".modal .prev");
   const nextBtn = document.querySelector(".modal .next");
-
-  const textos = [
-    "Nuestra primera foto juntos 💖",
-    "Un viaje inolvidable 🌍",
-    "El día en que dijimos sí 💍",
-  ];
 
   let currentIndex = 0;
 
@@ -102,15 +95,26 @@ document.addEventListener("DOMContentLoaded", () => {
   const heroSection = document.querySelector(".hero-section");
   const formSection = document.getElementById("form-asistencia");
 
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
-      volverBtn.classList.add("visible");
-    } else {
-      volverBtn.classList.remove("visible");
-    }
-  });
-
-  volverBtn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
+window.addEventListener("scroll", () => {
+  const icon = volverBtn.querySelector("i");
+  if (window.scrollY > 200) {
+    volverBtn.classList.add("visible");
+    icon.className = "bi bi-chevron-up";
+  } else {
+    volverBtn.classList.add("visible");
+    icon.className = "bi bi-chevron-down";
+  }
 });
+
+
+volverBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  const icon = volverBtn.querySelector("i");
+  if (window.scrollY > 200) {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  } else {
+    const galeria = document.getElementById("galeria");
+    galeria?.scrollIntoView({ behavior: "smooth" });
+  }
+});
+})
