@@ -101,7 +101,7 @@ window.addEventListener("scroll", () => {
     volverBtn.classList.add("visible");
     icon.className = "bi bi-chevron-up";
   } else {
-    volverBtn.classList.add("visible");
+    volverBtn.classList.remove("visible");
     icon.className = "bi bi-chevron-down";
   }
 });
