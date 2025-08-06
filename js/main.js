@@ -126,4 +126,30 @@ volverBtn.addEventListener("click", (e) => {
     galeria?.scrollIntoView({ behavior: "smooth" });
   }
 });
+
+// -------- INICIALIZACIÓN SWIPER CARRUSEL -------- //
+
+const swiper = new Swiper('.gallery-swiper', {
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  spaceBetween: 40, // Aumentado el espacio entre imágenes
+  loop: false, // Sin wrap
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: '.custom-swiper-next',
+    prevEl: '.custom-swiper-prev',
+  },
+  breakpoints: {
+    768: {
+      spaceBetween: 20,
+    },
+    480: {
+      spaceBetween: 10,
+    },
+  },
+});
+
 })();

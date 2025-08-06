@@ -248,13 +248,23 @@ body {
 .gallery-section {
     padding: 6rem 0;
     background: var(--white);
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Swiper Container */
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 3rem;
 }
 
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .gallery-item {
@@ -271,6 +281,8 @@ body {
     color: var(--text-light);
     font-size: 3rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 280px;
+    margin: 0 auto;
 }
 
 .gallery-item:hover {
@@ -300,6 +312,50 @@ body {
   object-fit: cover;
   border-radius: 20px;
   display: block;
+}
+
+/* Estilos para las flechas de navegación de Swiper */
+.swiper-button-next, .swiper-button-prev {
+    color: var(--primary-gold);
+    background-color: var(--white); 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: var(--secondary-brown); 
+    color: var(--white);
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 1.5rem;
+}
+
+/* Responsive adjustments for Swiper arrows */
+@media (max-width: 768px) {
+    .swiper-button-next, .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+    }
+    .swiper-button-next::after, .swiper-button-prev::after {
+        font-size: 1.2rem;
+    }
+    .swiper-button-prev {
+        left: 5px;
+    }
+    .swiper-button-next {
+        right: 5px;
+    }
 }
 
 /* CTA Section */
@@ -341,6 +397,196 @@ body {
     color: var(--text-dark);
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Ceremony & Party Section */
+.ceremony-party-section {
+    padding: 4rem 0;
+    background-color: var(--cream-bg);
+}
+
+.ceremony-party-section .section-title,
+.ceremony-party-section .section-subtitle {
+    color: var(--secondary-brown);
+}
+
+.detail-category-block {
+    padding: 2.5rem;
+    height: 100%;
+    margin-bottom: 2rem;
+}
+
+.detail-category-block h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--primary-gold);
+}
+
+.detail-item {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-item h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.detail-item p {
+    font-size: 1.1rem;
+    color: var(--text-medium);
+    margin-bottom: 1rem;
+}
+
+.icon-detail {
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.btn-detail-action {
+    background: none;
+    border: 2px solid var(--primary-gold);
+    color: var(--primary-gold);
+    padding: 0.8rem 1.8rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 0.5rem 0.5rem;
+}
+
+.btn-detail-action:hover {
+    background: var(--primary-gold);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-card {
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    padding: 2.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.info-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+    color: var(--secondary-brown);
+}
+
+.info-card p {
+    font-size: 1.1rem;
+    color: var(--text-medium);
+    line-height: 1.6;
+}
+
+/* Botones pequeños dentro de las tarjetas */
+.btn-cta-small {
+    background: var(--primary-gold);
+    color: var(--white);
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1.5rem;
+}
+
+.btn-cta-small:hover {
+    background: var(--secondary-brown);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gifts Section */
+.gifts-section {
+    padding: 6rem 0;
+    background-color: var(--cream-bg);
+    color: var(--text-dark);
+}
+
+.gifts-section .section-title,
+.gifts-section .section-subtitle {
+    color: var(--secondary-brown);
+}
+
+.gallery-item {
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+/* Instagram Section */
+.instagram-section {
+    padding: 6rem 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/top-footer.webp');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: var(--white);
+}
+
+.instagram-section .section-title,
+.instagram-section .section-subtitle,
+.hashtag {
+    color: var(--white);
+}
+
+.hashtag {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+
+/* Info Extra Section */
+.info-extra-section {
+    padding: 4rem 0;
+    background-color: var(--cream-bg);
+}
+
+/* Iconos dentro de las tarjetas de información (si se usan fuera de .info-card) */
+.icon-info {
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.section-subtitle {
+    margin-bottom: 3rem; 
+}
+
+.instagram-section .section-subtitle {
+    margin-bottom: 2rem;
 }
 
 /* Footer */

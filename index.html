@@ -23,6 +23,8 @@
       <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
       <!-- Font Awesome -->
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+      <!-- Swiper CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
       <!-- Styles -->
       <link href="./css/styles.css" rel="stylesheet">
       
@@ -45,6 +47,35 @@
           
           <div class="scroll-indicator">
               <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </div>
+      </section>
+
+      <!-- Countdown Section -->
+      <section id="cuenta-regresiva" class="countdown-section fade-in">
+          <div class="container">
+              <h2 class="section-title font-sail">Faltan</h2>
+              <p class="section-subtitle">
+                  Cada segundo nos acerca más a nuestro gran día
+              </p>
+              
+              <div class="countdown-container" id="countdown">
+                  <div class="countdown-item">
+                      <div class="countdown-number" id="days" aria-label="Días restantes">0</div>
+                      <div class="countdown-label">Días</div>
+                  </div>
+                  <div class="countdown-item">
+                      <div class="countdown-number" id="hours" aria-label="Horas restantes">0</div>
+                      <div class="countdown-label">Horas</div>
+                  </div>
+                  <div class="countdown-item">
+                      <div class="countdown-number" id="minutes" aria-label="Minutos restantes">0</div>
+                      <div class="countdown-label">Minutos</div>
+                  </div>
+                  <div class="countdown-item">
+                      <div class="countdown-number" id="seconds" aria-label="Segundos restantes">0</div>
+                      <div class="countdown-label">Segundos</div>
+                  </div>
+              </div>
           </div>
       </section>
 
@@ -78,62 +109,146 @@
           </div>
       </section>
 
-      <!-- Countdown Section -->
-      <section id="cuenta-regresiva" class="countdown-section fade-in">
-          <div class="container">
-              <h2 class="section-title font-sail">Faltan</h2>
-              <p class="section-subtitle">
-                  Cada segundo nos acerca más a nuestro gran día
-              </p>
+      <!-- Ceremony & Party Section -->
+      <section id="ceremonia" class="ceremony-party-section fade-in">
+          <div class="container text-center">
+              <h2 class="section-title font-sail">Ceremonia y Fiesta</h2>
+              <p class="section-subtitle">Acompáñanos en este momento tan especial y celebremos juntos nuestro amor.</p>
               
-              <div class="countdown-container" id="countdown">
-                  <div class="countdown-item">
-                      <div class="countdown-number" id="days" aria-label="Días restantes">0</div>
-                      <div class="countdown-label">Días</div>
+              <div class="row justify-content-center">
+                  <!-- Columna para la Ceremonia -->
+                  <div class="col-md-6 mb-4">
+                      <div class="detail-category-block">
+                          <h3 class="font-sail mb-3">La Ceremonia</h3>
+                          <div class="detail-item">
+                              <i class="fas fa-calendar-alt icon-detail mb-2"></i>
+                              <h4>Día y Hora</h4>
+                              <p>Sábado 15 de Mayo - 17hs</p>
+                              <a href="#" class="btn-detail-action">Agendar</a>
+                          </div>
+                          <div class="detail-item">
+                              <i class="fas fa-map-marker-alt icon-detail mb-2"></i>
+                              <h4>Lugar</h4>
+                              <p>Parroquia Nuestra Señora de Luján</p>
+                              <a href="#" class="btn-detail-action">¿Cómo llegar?</a>
+                          </div>
+                          <div class="detail-item">
+                              <i class="fas fa-envelope-open-text icon-detail mb-2"></i>
+                              <h4>Confirmación</h4>
+                              <p>Confirma tu asistencia</p>
+                              <a href="#rsvp" class="btn-detail-action">Confirmar asistencia</a>
+                          </div>
+                      </div>
                   </div>
-                  <div class="countdown-item">
-                      <div class="countdown-number" id="hours" aria-label="Horas restantes">0</div>
-                      <div class="countdown-label">Horas</div>
-                  </div>
-                  <div class="countdown-item">
-                      <div class="countdown-number" id="minutes" aria-label="Minutos restantes">0</div>
-                      <div class="countdown-label">Minutos</div>
-                  </div>
-                  <div class="countdown-item">
-                      <div class="countdown-number" id="seconds" aria-label="Segundos restantes">0</div>
-                      <div class="countdown-label">Segundos</div>
+
+                  <!-- Columna para la Fiesta -->
+                  <div class="col-md-6 mb-4">
+                      <div class="detail-category-block">
+                          <h3 class="font-sail mb-3">La Fiesta</h3>
+                          <div class="detail-item">
+                              <i class="fas fa-glass-cheers icon-detail mb-2"></i>
+                              <h4>Hora</h4>
+                              <p>Sábado 15 de Mayo - 20hs</p>
+                              <a href="#" class="btn-detail-action">Agendar</a>
+                          </div>
+                          <div class="detail-item">
+                              <i class="fas fa-map-marked-alt icon-detail mb-2"></i>
+                              <h4>Lugar</h4>
+                              <p>Salón de Fiestas Avril</p>
+                              <a href="#" class="btn-detail-action">¿Cómo llegar?</a>
+                          </div>
+                          <div class="detail-item">
+                              <i class="fas fa-envelope-open-text icon-detail mb-2"></i>
+                              <h4>Confirmación</h4>
+                              <p>Confirma tu asistencia</p>
+                              <a href="#rsvp" class="btn-detail-action">Confirmar asistencia</a>
+                          </div>
+                      </div>
                   </div>
               </div>
+          </div>
+      </section>
+
+      <!-- Info Sections (Música, Dress Code, Tips) -->
+      <section id="info-extra" class="info-extra-section fade-in">
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-md-4 mb-4">
+                      <div class="info-card p-4 text-center h-100">
+                          <h3 class="font-sail">Música</h3>
+                          <p class="mb-3">¿Cuál es la canción que no debe faltar en la PlayList?</p>
+                          <a href="#" class="btn-cta-small">Sugerir canción</a>
+                      </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                      <div class="info-card p-4 text-center h-100">
+                          <h3 class="font-sail">Dress Code</h3>
+                          <p class="mb-3">Una orientación para tu vestuario</p>
+                          <a href="#" class="btn-cta-small">Ver más</a>
+                      </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                      <div class="info-card p-4 text-center h-100">
+                          <h3 class="font-sail">Tips y Notas</h3>
+                          <p class="mb-3">Información adicional a tener en cuenta</p>
+                          <a href="#" class="btn-cta-small">+ Info</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Instagram Section -->
+      <section id="instagram" class="instagram-section fade-in">
+          <div class="container text-center">
+              <h2 class="section-title font-sail">Compartimos este día junto a vos</h2>
+              <p class="section-subtitle mb-4">Compartí tus fotos y videos de ese hermoso día</p>
+              <h3 class="hashtag font-sail mb-4">#AlejandroYCandelaria2026</h3>
+              <a href="#" class="btn-cta">
+                  <i class="fab fa-instagram me-2"></i>
+                  Ver en Instagram
+              </a>
+          </div>
+      </section>
+
+      <!-- Gifts Section -->
+      <section id="regalos" class="gifts-section fade-in">
+          <div class="container text-center">
+              <h2 class="section-title font-sail">Regalos</h2>
+              <p class="section-subtitle">Si deseas regalarnos algo más que tu hermosa presencia...</p>
+              <a href="#" class="btn-cta">Ver más</a>
           </div>
       </section>
 
       <!-- Gallery Section -->
       <section id="galeria" class="gallery-section fade-in">
           <div class="container">
-              <h2 class="section-title font-sail">Momentos Especiales</h2>
+              <h2 class="section-title font-sail">Retratos de Nuestro Amor</h2>
               <p class="section-subtitle">
-                  Algunos de nuestros momentos favoritos juntos
+                  Un minuto, un segundo, un instante que queda en la eternidad
               </p>
               
-              <div class="gallery-grid">
-                  <article class="gallery-item" tabindex="0" role="button" aria-label="Foto de la propuesta">
-                      <img src="./images/galery-1.webp" alt="Foto de la propuesta" class="gallery-img" />
-                  </article>
-                  <article class="gallery-item" tabindex="0" role="button" aria-label="Foto de compromiso">
-                      <i class="fas fa-heart" aria-hidden="true"></i>
-                  </article>
-                  <article class="gallery-item" tabindex="0" role="button" aria-label="Foto de viaje">
-                      <i class="fas fa-camera" aria-hidden="true"></i>
-                  </article>
-                  <article class="gallery-item" tabindex="0" role="button" aria-label="Foto celebrando">
-                      <i class="fas fa-champagne-glasses" aria-hidden="true"></i>
-                  </article>
-                  <article class="gallery-item" tabindex="0" role="button" aria-label="Foto romántica">
-                      <i class="fas fa-star" aria-hidden="true"></i>
-                  </article>
-                  <article class="gallery-item" tabindex="0" role="button" aria-label="Foto de pareja">
-                      <i class="fas fa-kiss" aria-hidden="true"></i>
-                  </article>
+              <div class="swiper gallery-swiper">
+                  <div class="swiper-wrapper gallery-grid">
+                      <article class="swiper-slide gallery-item" tabindex="0" role="button" aria-label="Foto de la propuesta">
+                          <img src="./images/galery-1.webp" alt="Foto de la propuesta" class="gallery-img" />
+                      </article>
+                      <article class="swiper-slide gallery-item" tabindex="0" role="button" aria-label="Foto de compromiso">
+                          <img src="./images/galery-2.webp" alt="Foto de compromiso" class="gallery-img" />
+                      </article>
+                      <article class="swiper-slide gallery-item" tabindex="0" role="button" aria-label="Foto de viaje">
+                          <img src="./images/galery-3.webp" alt="Foto de viaje" class="gallery-img" />
+                      </article>
+                      <article class="swiper-slide gallery-item" tabindex="0" role="button" aria-label="Foto celebrando">
+                          <img src="./images/galery-4.webp" alt="Foto celebrando" class="gallery-img" />
+                      </article>
+                      <article class="swiper-slide gallery-item" tabindex="0" role="button" aria-label="Foto de pareja">
+                          <img src="./images/galery-5.webp" alt="Foto de pareja" class="gallery-img" />
+                      </article>
+                  </div>
+                  <!-- Add Arrows -->
+                  <div class="swiper-button-next custom-swiper-next"></div>
+                  <div class="swiper-button-prev custom-swiper-prev"></div>
               </div>
               
               <div class="text-center mt-5">
@@ -195,6 +310,8 @@
 
       <!-- Bootstrap JavaScript -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <!-- Custom JavaScript -->
       <script src="./js/main.js"></script>
   </body>
