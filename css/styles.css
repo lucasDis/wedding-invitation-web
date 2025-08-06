@@ -549,7 +549,7 @@ body {
 /* Instagram Section */
 .instagram-section {
     padding: 6rem 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/top-footer.webp');
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/overlay-insta.webp');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -728,4 +728,207 @@ html {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Grass decorations for countdown section */
+.countdown-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.grass-decoration {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.grass-left {
+    left: -50px;
+}
+
+.grass-right {
+    right: -10px;
+}
+
+.grass-image {
+    position: absolute;
+    max-width: 70%;
+    height: auto;
+    opacity: 0;
+    animation: grassFadeIn 1.5s ease-out forwards;
+}
+
+.grass-1 {
+    top: 15%;
+    left: 30px;
+    animation-delay: 0.2s;
+}
+
+.grass-4 {
+    top: 15%;
+    right: -50px;
+    animation-delay: 0.6s;
+}
+
+/* Grass decorations for gifts section */
+.gifts-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.grass-gifts {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.grass-2 {
+    position: absolute;
+    right: -30px;
+    max-width: 100%;
+    height: auto;
+    opacity: 0;
+    animation: grassFadeIn 1.5s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+/* Grass decorations for gallery section */
+.gallery-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.grass-gallery {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.grass-3 {
+    position: absolute;
+    bottom: -315%;
+    max-width: 100%;
+    height: auto;
+    opacity: 0;
+    animation: grassFadeIn 1.5s ease-out forwards;
+    animation-delay: 0.4s;
+}
+
+/* Ensure content stays above grass in gifts and gallery sections */
+.gifts-section .container,
+.gallery-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes grassFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Ensure countdown content stays above grass */
+.countdown-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Responsive adjustments for grass decorations */
+@media (max-width: 768px) {
+    .grass-decoration {
+        width: 200px;
+    }
+    
+    .grass-left {
+        left: -50px;
+    }
+    
+    .grass-right {
+        right: -50px;
+    }
+    
+    .grass-1 {
+        top: 15%;
+        left: 30px;
+    }
+    
+    .grass-4 {
+        top: 75%;
+        right: -30px;
+    }
+    
+    /* Responsive adjustments for gifts and gallery grass */
+    .grass-gifts {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .grass-gallery {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .grass-2 {
+        right: -20px;
+    }
+    
+    .grass-3 {
+        bottom: 5%;
+        left: -20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grass-decoration {
+        width: 150px;
+    }
+    
+    .grass-left {
+        left: -30px;
+    }
+    
+    .grass-right {
+        right: -30px;
+    }
+    
+    .grass-image {
+        max-width: 80%;
+    }
+    
+    /* Mobile adjustments for gifts and gallery grass */
+    .grass-gifts {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .grass-gallery {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .grass-2 {
+        top: 0;
+        right: -10px;
+    }
+    
+    .grass-3 {
+        bottom: 0;
+        left: -10px;
+    }
 }
