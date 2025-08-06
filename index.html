@@ -1,141 +1,201 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Alejandro y Candelaria se casan - Página oficial de nuestra boda. Encuentra toda la información sobre nuestra ceremonia, galería de fotos y confirma tu asistencia.">
+      <meta name="keywords" content="boda, matrimonio, Candelaria, Alejandro, ceremonia, invitación, galería, RSVP">
+      <meta name="author" content="Candelaria y Alejandro">
+      
+      <!-- Open Graph -->
+      <meta property="og:title" content="María & Carlos - Nuestra Boda">
+      <meta property="og:description" content="Nos casamos y queremos celebrarlo contigo. Únete a nosotros en nuestro día especial.">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://mariacarlosboda.com">
+      
+      <title>Alejandro & Candelaria - Nuestra Boda | 15 de Septiembre 2026</title>
+      
+      <!-- Bootstrap CSS -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Google Fonts - Sail -->
+      <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
+      <!-- Google Fonts - Jost -->
+      <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <!-- Font Awesome -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+      <!-- Styles -->
+      <link href="./css/styles.css" rel="stylesheet">
+      
+  </head>
+  <body>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wedding Web</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Raleway:wght@400;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
-
-<body>
-  <!-- Hero Section -->
-  <header class="hero-section">
-    <div class="couple-photo-placeholder">
-      <img src="./images/married-main.webp" alt="Foto de los novios" class="couple-photo-img">
-    </div>
-  </header>
-
-  <main class="content-section">
-    <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-10 col-lg-8">
-          <section class="names-container">
-            <div class="names-background-image"></div>
-            <h1 class="main-names">
-              <span class="bride-name">Alejandro</span>
-              <span class="divider d-none d-sm-block"></span>
-              <span class="groom-name">Carolina</span>
-            </h1>
-          </section>
-
-          <!-- Botanical Element -->
-          <div class="botanical-element">
-            <img src="./images/main-flower-bottom.webp" alt="Botanical Flower" class="main-flower-bottom">
+      <!-- Hero Section -->
+      <section id="inicio" class="hero">
+          <div class="hero-container">
+              <div class="hero-content">
+                  <p class="hero-subtitle">Nos casamos</p>
+                  <h1 class="hero-title font-sail">Alejandro & Candelaria</h1>
+                  <p class="hero-date">15 de Septiembre, 2026</p>
+                  <a href="#rsvp" class="hero-cta">
+                      <i class="fas fa-heart me-2" aria-hidden="true"></i>
+                      Confirma tu Asistencia
+                  </a>
+              </div>
           </div>
-
-          <!-- Countdown Section -->
-          <section class="countdown-container">
-            <div class="countdown-timer" id="countdown">
-              <div class="countdown-item">
-                <span class="countdown-number" id="dias">250</span>
-                <span class="countdown-label">días</span>
-              </div>
-              <div class="countdown-item">
-                <span class="countdown-number" id="horas">00</span>
-                <span class="countdown-label">horas</span>
-              </div>
-              <div class="countdown-item">
-                <span class="countdown-number" id="minutos">00</span>
-                <span class="countdown-label">min</span>
-              </div>
-              <div class="countdown-item">
-                <span class="countdown-number" id="segundos">00</span>
-                <span class="countdown-label">seg</span>
-              </div>
-            </div>
-            <div class="countdown-message">hasta nuestro gran día</div>
-            <a href="./pages/formulario.html" class="confirm-button">Confirmar Asistencia</a>
-          </section>
-
-          <!-- Social Links -->
-          <nav class="social-links">
-            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
-            <a href="#" class="social-icon"><i class="bi bi-pinterest"></i></a>
-          </nav>
-
-          <!-- Sección de Comentarios -->
-          <section class="content-section comentarios">
-            <h2>Palabras de los novios</h2>
-            <div class="quotes-content">
-              <blockquote>
-                <p>"Cada momento juntos nos llevó hasta aquí. Gracias por ser parte de nuestra historia."</p>
-                <footer>— Lucas</footer>
-              </blockquote>
-              <blockquote>
-                <p>"Este día no sería igual sin quienes más queremos a nuestro lado. ¡Te esperamos!"</p>
-                <footer>— Valentina</footer>
-              </blockquote>
-            </div>
-          </section>
-
-          <section id="galeria" class="content-section galeria">
-            <h2>Nuestra historia en fotos</h2>
-            <div class="gallery-content">
-              <div class="galeria-grid">
-                <img class="galeria-img" src="./images/galery-1.webp"
-                  alt="Los novios tomados de la mano en un paisaje boscoso" />
-                <img class="galeria-img" src="./images/galery-2.webp"
-                  alt="Los novios riendo mientras caminan por un campo" />
-                <img class="galeria-img" src="./images/galery-3.webp" alt="Los novios bailando bajo las estrellas" />
-              </div>
-            </div>
-          </section>
-
-          <div id="modal" class="modal hidden">
-            <span class="close">&times;</span>
-            <img id="modal-img" class="modal-content" />
-            <div id="modal-text"></div>
-            <a class="prev"><i class="bi bi-chevron-left"></i></a>
-            <a class="next"><i class="bi bi-chevron-right"></i></a>
+          
+          <div class="scroll-indicator">
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
           </div>
+      </section>
 
-           
-            <!-- Footer -->
-            <footer class="footer-save-date">
-              <div class="footer-bouquet-container">
-                <div class="footer-bouquet"></div>
-                <div class="footer-arch-overlay"></div>
-              </div>
-  
-              <h2 class="footer-save-title">Gracias por estar</h2>
-  
-              <p class="footer-invitation-text">
-                Si estás leyendo esto, es porque sos alguien realmente importante para nosotros. Gracias por compartir este momento inolvidable.
+      <!-- About Section -->
+      <section id="nosotros" class="about-section fade-in">
+          <div class="container">
+              <h2 class="section-title font-sail">Nuestra Historia</h2>
+              <p class="section-subtitle">
+                  Dos corazones que se encontraron y decidieron caminar juntos para siempre
               </p>
-  
-              <div class="footer-date-info">
-                <div class="footer-day">Sábado</div>
-                <div class="footer-month-day">NOV 17</div>
-                <div class="footer-time">18 hs.</div>
+              
+              <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                      <div class="couple-story">
+                          <p class="couple-names font-sail">María & Carlos</p>
+                          <p>
+                              Nos conocimos hace cinco años en una tarde lluviosa de otoño. Lo que comenzó como una casualidad 
+                              se convirtió en la historia de amor más hermosa que podríamos haber imaginado.
+                          </p>
+                          <p>
+                              Después de compartir aventuras, sueños y construir un futuro juntos, hemos decidido dar el paso 
+                              más importante de nuestras vidas. Queremos que seas parte de este momento especial y compartas 
+                              con nosotros el inicio de nuestro para siempre.
+                          </p>
+                          <p>
+                              <strong>¡Tu presencia haría nuestro día perfecto!</strong>
+                          </p>
+                      </div>
+                  </div>
               </div>
-  
-              <div class="footer-botanical"></div>
-            </footer>
-  
-            <a href="#galeria" class="volver-arriba visible">
-              <i class="bi bi-chevron-down"></i>
-            </a>
+          </div>
+      </section>
 
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-          <script src="./js/main.js"></script>
-</body>
+      <!-- Countdown Section -->
+      <section id="cuenta-regresiva" class="countdown-section fade-in">
+          <div class="container">
+              <h2 class="section-title font-sail">Faltan</h2>
+              <p class="section-subtitle">
+                  Cada segundo nos acerca más a nuestro gran día
+              </p>
+              
+              <div class="countdown-container" id="countdown">
+                  <div class="countdown-item">
+                      <div class="countdown-number" id="days" aria-label="Días restantes">0</div>
+                      <div class="countdown-label">Días</div>
+                  </div>
+                  <div class="countdown-item">
+                      <div class="countdown-number" id="hours" aria-label="Horas restantes">0</div>
+                      <div class="countdown-label">Horas</div>
+                  </div>
+                  <div class="countdown-item">
+                      <div class="countdown-number" id="minutes" aria-label="Minutos restantes">0</div>
+                      <div class="countdown-label">Minutos</div>
+                  </div>
+                  <div class="countdown-item">
+                      <div class="countdown-number" id="seconds" aria-label="Segundos restantes">0</div>
+                      <div class="countdown-label">Segundos</div>
+                  </div>
+              </div>
+          </div>
+      </section>
 
+      <!-- Gallery Section -->
+      <section id="galeria" class="gallery-section fade-in">
+          <div class="container">
+              <h2 class="section-title font-sail">Momentos Especiales</h2>
+              <p class="section-subtitle">
+                  Algunos de nuestros momentos favoritos juntos
+              </p>
+              
+              <div class="gallery-grid">
+                  <article class="gallery-item" tabindex="0" role="button" aria-label="Foto de la propuesta">
+                      <img src="./images/galery-1.webp" alt="Foto de la propuesta" class="gallery-img" />
+                  </article>
+                  <article class="gallery-item" tabindex="0" role="button" aria-label="Foto de compromiso">
+                      <i class="fas fa-heart" aria-hidden="true"></i>
+                  </article>
+                  <article class="gallery-item" tabindex="0" role="button" aria-label="Foto de viaje">
+                      <i class="fas fa-camera" aria-hidden="true"></i>
+                  </article>
+                  <article class="gallery-item" tabindex="0" role="button" aria-label="Foto celebrando">
+                      <i class="fas fa-champagne-glasses" aria-hidden="true"></i>
+                  </article>
+                  <article class="gallery-item" tabindex="0" role="button" aria-label="Foto romántica">
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                  </article>
+                  <article class="gallery-item" tabindex="0" role="button" aria-label="Foto de pareja">
+                      <i class="fas fa-kiss" aria-hidden="true"></i>
+                  </article>
+              </div>
+              
+              <div class="text-center mt-5">
+                  <p class="text-muted">
+                      <em>Pronto agregaremos más fotos de nuestros momentos favoritos</em>
+                  </p>
+              </div>
+          </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section id="rsvp" class="cta-section fade-in">
+          <div class="container">
+              <div class="cta-content">
+                  <h2 class="font-sail">¿Nos acompañarás?</h2>
+                  <p>
+                      Tu presencia es el mejor regalo que podríamos recibir. 
+                      Por favor, confirma tu asistencia antes del 1 de septiembre.
+                  </p>
+                  <a href="rsvp.html" class="btn-cta">
+                      <i class="fas fa-envelope me-2" aria-hidden="true"></i>
+                      Confirmar Asistencia
+                  </a>
+              </div>
+          </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+          <div class="container">
+              <div class="footer-content">
+                  <h3 class="footer-title font-sail">Alejandro & Candelaria</h3>
+                  <p>
+                      Gracias por formar parte de nuestro camino hacia el altar. 
+                      ¡Esperamos celebrar contigo el 15 de septiembre!
+                  </p>
+                  
+                  <div class="social-links">
+                      <a href="#" aria-label="Instagram" title="Síguenos en Instagram">
+                          <i class="fab fa-instagram" aria-hidden="true"></i>
+                      </a>
+                      <a href="#" aria-label="Facebook" title="Síguenos en Facebook">
+                          <i class="fab fa-facebook" aria-hidden="true"></i>
+                      </a>
+                      <a href="mailto:contacto@mariacarlosboda.com" aria-label="Email" title="Envíanos un email">
+                          <i class="fas fa-envelope" aria-hidden="true"></i>
+                      </a>
+                      <a href="tel:+1234567890" aria-label="Teléfono" title="Llámanos">
+                          <i class="fas fa-phone" aria-hidden="true"></i>
+                      </a>
+                  </div>
+              </div>
+              
+              <div class="footer-bottom">
+                  <p>&copy; 2026 Alejandro & Candelaria. Hecho con <i class="fas fa-heart" style="color: var(--primary-gold);" aria-hidden="true"></i> para nuestro día especial.</p>
+              </div>
+          </div>
+      </footer>
+
+      <!-- Bootstrap JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+      <!-- Custom JavaScript -->
+      <script src="./js/main.js"></script>
+  </body>
 </html>

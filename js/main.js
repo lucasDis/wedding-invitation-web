@@ -1,82 +1,91 @@
+document.querySelectorAll('.fade-in').forEach(el => el.classList.add('visible'));
 
-document.addEventListener("DOMContentLoaded", () => {
-  // -------- GALERÍA CON MODAL -------- //
-  const imagenes = document.querySelectorAll(".galeria-img");
-  const modal = document.getElementById("modal");
-  const modalImg = document.getElementById("modal-img");
-  const closeModal = document.querySelector(".modal .close");
-  const prevBtn = document.querySelector(".modal .prev");
-  const nextBtn = document.querySelector(".modal .next");
+// -------- CONTADOR REGRESIVO -------- //
 
-  let currentIndex = 0;
+(function() {
+  'use strict';
 
-  function mostrarModal(index) {
-    if (index >= 0 && index < imagenes.length) {
-      modal.classList.remove("hidden");
-      modalImg.src = imagenes[index].src;
-      modalImg.alt = imagenes[index].alt;
-      modalText.textContent = textos[index] || "";
-      currentIndex = index;
-    }
-  }
+  // Configuration
+  const CONFIG = {
+      weddingDate: '2026-02-15T18:00:00',
+      scrollOffset: 100,
+      animationDelay: 100
+  };
 
-  imagenes.forEach((img, index) => {
-    img.addEventListener("click", (e) => {
-      e.preventDefault();
-      mostrarModal(index);
-    });
-  });
+  // DOM Elements
+  const elements = {
+      days: document.getElementById('days'),
+      hours: document.getElementById('hours'),
+      minutes: document.getElementById('minutes'),
+      seconds: document.getElementById('seconds'),
+      countdown: document.getElementById('countdown'),
+      navbar: document.querySelector('.navbar'),
+      fadeElements: document.querySelectorAll('.fade-in'),
+      galleryItems: document.querySelectorAll('.gallery-item'),
+      navLinks: document.querySelectorAll('a[href^="#"]')
+  };
 
-  closeModal.addEventListener("click", () => {
-    modal.classList.add("hidden");
-  });
+  // Countdown Timer Functionality
+  const countdown = {
+      targetDate: new Date(CONFIG.weddingDate).getTime(),
+      
+      init() {
+          this.update();
+          this.interval = setInterval(() => this.update(), 1000);
+      },
+      
+      update() {
+          const now = new Date().getTime();
+          const distance = this.targetDate - now;
+          
+          if (distance > 0) {
+              const times = this.calculateTime(distance);
+              this.updateDisplay(times);
+          } else {
+              this.showWeddingDay();
+          }
+      },
+      
+      calculateTime(distance) {
+          return {
+              days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+              hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+              minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+              seconds: Math.floor((distance % (1000 * 60)) / 1000)
+          };
+      },
+      
+      updateDisplay(times) {
+          if (elements.days) elements.days.textContent = this.padZero(times.days);
+          if (elements.hours) elements.hours.textContent = this.padZero(times.hours);
+          if (elements.minutes) elements.minutes.textContent = this.padZero(times.minutes);
+          if (elements.seconds) elements.seconds.textContent = this.padZero(times.seconds);
+      },
+      
+      padZero(num) {
+          return num < 10 ? '0' + num : num;
+      },
+      
+      showWeddingDay() {
+          if (elements.countdown) {
+              elements.countdown.innerHTML = `
+                  <div class="countdown-item">
+                      <div class="countdown-number">¡Hoy!</div>
+                      <div class="countdown-label">Es el gran día</div>
+                  </div>
+              `;
+          }
+          clearInterval(this.interval);
+      },
+      
+      destroy() {
+          if (this.interval) {
+              clearInterval(this.interval);
+          }
+      }
+  };
 
-  prevBtn.addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + imagenes.length) % imagenes.length;
-    mostrarModal(currentIndex);
-  });
-
-  nextBtn.addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % imagenes.length;
-    mostrarModal(currentIndex);
-  });
-
-  // -------- CONTADOR REGRESIVO -------- //
-  const fechaBoda = new Date("2025-12-20T00:00:00");
-  const diasEl = document.getElementById("dias");
-  const horasEl = document.getElementById("horas");
-  const minutosEl = document.getElementById("minutos");
-  const segundosEl = document.getElementById("segundos");
-  const countdownMessageEl = document.querySelector(".countdown-message");
-
-  function actualizarCountdown() {
-    const ahora = new Date();
-    const diff = fechaBoda - ahora;
-
-    if (diff <= 0) {
-      countdownMessageEl.textContent = "¡Hoy es el gran día!";
-      diasEl.textContent = "0";
-      horasEl.textContent = "00";
-      minutosEl.textContent = "00";
-      segundosEl.textContent = "00";
-      return;
-    }
-
-    const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const horas = Math.floor((diff / (1000 * 60 * 60)) % 24);
-    const minutos = Math.floor((diff / (1000 * 60)) % 60);
-    const segundos = Math.floor((diff / 1000) % 60);
-
-    diasEl.textContent = dias;
-    horasEl.textContent = horas < 10 ? `0${horas}` : horas;
-    minutosEl.textContent = minutos < 10 ? `0${minutos}` : minutos;
-    segundosEl.textContent = segundos < 10 ? `0${segundos}` : segundos;
-  }
-
-  if (diasEl && horasEl && minutosEl && segundosEl) {
-    actualizarCountdown();
-    setInterval(actualizarCountdown, 1000);
-  }
+  countdown.init();
 
   // -------- FORMULARIO DE CONFIRMACIÓN -------- //
   const form = document.getElementById("form-asistencia");
@@ -117,4 +126,4 @@ volverBtn.addEventListener("click", (e) => {
     galeria?.scrollIntoView({ behavior: "smooth" });
   }
 });
-})
+})();
