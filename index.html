@@ -1,141 +1,201 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alejandro y Cande</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wedding Web</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Raleway:wght@400;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
+  <body>
+    <!-- Hero Section -->
+    <header class="hero-section relative">
+      <div class="relative">
+        <img
+          src="./images/married-main.webp"
+          alt="Foto de los novios"
+          class="couple-photo-img"
+        />
+      </div>
+      <div class="d-flex justify-content-center align-items-center border border-success z-10">
+        <h1 class="main-names">
+          <span class="bride-name">Alejandro</span>
+          <span class="divider d-none d-sm-block"></span>
+          <span class="groom-name">Candelaria</span>
+        </h1>
+      </div>
+      <div class="absolute b-0 w-full">
+        <div class="footer-botanical"></div>
+      </div>
+    </header>
 
-<body>
-  <!-- Hero Section -->
-  <header class="hero-section">
-    <div class="couple-photo-placeholder">
-      <img src="./images/married-main.webp" alt="Foto de los novios" class="couple-photo-img">
-    </div>
-  </header>
+    <main class="content-section">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            <section class="names-container">
+              <div class="names-background-image"></div>
+              <h1 class="main-names">
+                <span class="bride-name">Alejandro</span>
+                <span class="divider d-none d-sm-block"></span>
+                <span class="groom-name">Candelaria</span>
+              </h1>
+            </section>
 
-  <main class="content-section">
-    <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-10 col-lg-8">
-          <section class="names-container">
-            <div class="names-background-image"></div>
-            <h1 class="main-names">
-              <span class="bride-name">Alejandro</span>
-              <span class="divider d-none d-sm-block"></span>
-              <span class="groom-name">Carolina</span>
-            </h1>
-          </section>
-
-          <!-- Botanical Element -->
-          <div class="botanical-element">
-            <img src="./images/main-flower-bottom.webp" alt="Botanical Flower" class="main-flower-bottom">
-          </div>
-
-          <!-- Countdown Section -->
-          <section class="countdown-container">
-            <div class="countdown-timer" id="countdown">
-              <div class="countdown-item">
-                <span class="countdown-number" id="dias">250</span>
-                <span class="countdown-label">días</span>
+            <!-- Countdown Section -->
+            <section class="countdown-container">
+              <div class="countdown-timer" id="countdown">
+                <div class="countdown-item">
+                  <span class="countdown-number" id="dias">250</span>
+                  <span class="countdown-label">días</span>
+                </div>
+                <div class="countdown-item">
+                  <span class="countdown-number" id="horas">00</span>
+                  <span class="countdown-label">horas</span>
+                </div>
+                <div class="countdown-item">
+                  <span class="countdown-number" id="minutos">00</span>
+                  <span class="countdown-label">min</span>
+                </div>
+                <div class="countdown-item">
+                  <span class="countdown-number" id="segundos">00</span>
+                  <span class="countdown-label">seg</span>
+                </div>
               </div>
-              <div class="countdown-item">
-                <span class="countdown-number" id="horas">00</span>
-                <span class="countdown-label">horas</span>
-              </div>
-              <div class="countdown-item">
-                <span class="countdown-number" id="minutos">00</span>
-                <span class="countdown-label">min</span>
-              </div>
-              <div class="countdown-item">
-                <span class="countdown-number" id="segundos">00</span>
-                <span class="countdown-label">seg</span>
-              </div>
+              <div class="countdown-message">hasta nuestro gran día</div>
+              <a href="./pages/formulario.html" class="confirm-button"
+                >Confirmar Asistencia</a
+              >
+            </section>
+
+            <!-- Botanical Element -->
+            <div class="botanical-element">
+              <img
+                src="./images/main-flower-bottom.webp"
+                alt="Botanical Flower"
+                class="main-flower-bottom"
+              />
             </div>
-            <div class="countdown-message">hasta nuestro gran día</div>
-            <a href="./pages/formulario.html" class="confirm-button">Confirmar Asistencia</a>
-          </section>
 
-          <!-- Social Links -->
-          <nav class="social-links">
-            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
-            <a href="#" class="social-icon"><i class="bi bi-pinterest"></i></a>
-          </nav>
+            <!-- Social Links -->
+            <nav class="social-links">
+              <a href="#" class="social-icon"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="bi bi-pinterest"></i
+              ></a>
+            </nav>
 
-          <!-- Sección de Comentarios -->
-          <section class="content-section comentarios">
-            <h2>Palabras de los novios</h2>
-            <div class="quotes-content">
-              <blockquote>
-                <p>"Cada momento juntos nos llevó hasta aquí. Gracias por ser parte de nuestra historia."</p>
-                <footer>— Lucas</footer>
-              </blockquote>
-              <blockquote>
-                <p>"Este día no sería igual sin quienes más queremos a nuestro lado. ¡Te esperamos!"</p>
-                <footer>— Valentina</footer>
-              </blockquote>
-            </div>
-          </section>
-
-          <section id="galeria" class="content-section galeria">
-            <h2>Nuestra historia en fotos</h2>
-            <div class="gallery-content">
-              <div class="galeria-grid">
-                <img class="galeria-img" src="./images/galery-1.webp"
-                  alt="Los novios tomados de la mano en un paisaje boscoso" />
-                <img class="galeria-img" src="./images/galery-2.webp"
-                  alt="Los novios riendo mientras caminan por un campo" />
-                <img class="galeria-img" src="./images/galery-3.webp" alt="Los novios bailando bajo las estrellas" />
+            <!-- Sección de Comentarios -->
+            <section class="content-section comentarios">
+              <h2>Palabras de los novios</h2>
+              <div class="quotes-content">
+                <blockquote>
+                  <p>
+                    "Cada momento juntos nos llevó hasta aquí. Gracias por ser
+                    parte de nuestra historia."
+                  </p>
+                  <footer>— Lucas</footer>
+                </blockquote>
+                <blockquote>
+                  <p>
+                    "Este día no sería igual sin quienes más queremos a nuestro
+                    lado. ¡Te esperamos!"
+                  </p>
+                  <footer>— Valentina</footer>
+                </blockquote>
               </div>
+            </section>
+
+            <section id="galeria" class="content-section galeria">
+              <h2>Nuestra historia en fotos</h2>
+              <div class="gallery-content">
+                <div class="galeria-grid">
+                  <img
+                    class="galeria-img"
+                    src="./images/galery-1.webp"
+                    alt="Los novios tomados de la mano en un paisaje boscoso"
+                  />
+                  <img
+                    class="galeria-img"
+                    src="./images/galery-2.webp"
+                    alt="Los novios riendo mientras caminan por un campo"
+                  />
+                  <img
+                    class="galeria-img"
+                    src="./images/galery-3.webp"
+                    alt="Los novios bailando bajo las estrellas"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <div id="modal" class="modal hidden">
+              <span class="close">&times;</span>
+              <img id="modal-img" class="modal-content" />
+              <div id="modal-text"></div>
+              <a class="prev"><i class="bi bi-chevron-left"></i></a>
+              <a class="next"><i class="bi bi-chevron-right"></i></a>
             </div>
-          </section>
 
-          <div id="modal" class="modal hidden">
-            <span class="close">&times;</span>
-            <img id="modal-img" class="modal-content" />
-            <div id="modal-text"></div>
-            <a class="prev"><i class="bi bi-chevron-left"></i></a>
-            <a class="next"><i class="bi bi-chevron-right"></i></a>
-          </div>
-
-           
             <!-- Footer -->
             <footer class="footer-save-date">
               <div class="footer-bouquet-container">
                 <div class="footer-bouquet"></div>
                 <div class="footer-arch-overlay"></div>
               </div>
-  
+
               <h2 class="footer-save-title">Gracias por estar</h2>
-  
+
               <p class="footer-invitation-text">
-                Si estás leyendo esto, es porque sos alguien realmente importante para nosotros. Gracias por compartir este momento inolvidable.
+                Si estás leyendo esto, es porque sos alguien realmente
+                importante para nosotros. Gracias por compartir este momento
+                inolvidable.
               </p>
-  
+
               <div class="footer-date-info">
                 <div class="footer-day">Sábado</div>
                 <div class="footer-month-day">NOV 17</div>
                 <div class="footer-time">18 hs.</div>
               </div>
-  
-              <div class="footer-botanical"></div>
             </footer>
-  
+
             <a href="#galeria" class="volver-arriba visible">
               <i class="bi bi-chevron-down"></i>
             </a>
+          </div>
+        </div>
+      </div>
+    </main>
 
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-          <script src="./js/main.js"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>

@@ -97,6 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 window.addEventListener("scroll", () => {
   const icon = volverBtn.querySelector("i");
+  volverBtn.classList.add("icon-visible");
   if (window.scrollY > 200) {
     volverBtn.classList.add("visible");
     icon.className = "bi bi-chevron-up";

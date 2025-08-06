@@ -14,6 +14,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
     background: var(--background);
     min-height: 100vh;
     padding: 0;
@@ -40,13 +41,15 @@ body {
 }
 
 .hero-section {
-    margin-top: 0 !important;
+    width: 100vw;
+    height: 50vh;
+    /* margin-top: 0 !important;
     padding-top: 0 !important;
     position: relative;
     width: 100%;
-    height: 220px;
+    height: 80vh;
     overflow: hidden;
-    z-index: 1;
+    z-index: 1; */
 }
 
 .couple-photo-placeholder {
@@ -589,8 +592,8 @@ body {
 }
 
 .footer-botanical {
-    position: relative;
-    bottom: -30px;
+    position: absolute;
+    bottom: -33px;
     left: 50%;
     transform: translateX(-50%);
     width: 380px; /* Más grande */
@@ -727,11 +730,11 @@ body {
         padding: 30px 15px;
     }
 
-    .couple-photo-placeholder {
+    /* .couple-photo-placeholder {
         width: 140px;
         height: 140px;
         font-size: 48px;
-    }
+    } */
 
     .main-names {
         flex-direction: column;
@@ -831,11 +834,11 @@ body {
         padding: 20px 10px;
     }
 
-    .couple-photo-placeholder {
+    /* .couple-photo-placeholder {
         width: 120px;
         height: 120px;
         font-size: 40px;
-    }
+    } */
 
     .main-names {
         flex-direction: column;
@@ -959,4 +962,10 @@ body {
         height: 90px; /* Ajustado para pantallas extra pequeñas */
         bottom: -10px;
     }
+}
+
+.icon-visible {
+    width: 100px;
+    height: 100px;
+    z-index: 1000;
 }
