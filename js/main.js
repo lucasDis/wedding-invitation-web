@@ -7,7 +7,7 @@ document.querySelectorAll('.fade-in').forEach(el => el.classList.add('visible'))
 
   // Configuration
   const CONFIG = {
-      weddingDate: '2026-02-15T18:00:00',
+      weddingDate: '2026-05-09T18:00:00',
       scrollOffset: 100,
       animationDelay: 100
   };
