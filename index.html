@@ -1,335 +1,493 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="Alejandro y Candelaria se casan - Página oficial de nuestra boda. Encuentra toda la información sobre nuestra ceremonia, galería de fotos y confirma tu asistencia.">
-      <meta name="keywords" content="boda, matrimonio, Candelaria, Alejandro, ceremonia, invitación, galería, RSVP">
-      <meta name="author" content="Candelaria y Alejandro">
-      
-      <!-- Open Graph -->
-      <meta property="og:title" content="María & Carlos - Nuestra Boda">
-      <meta property="og:description" content="Nos casamos y queremos celebrarlo contigo. Únete a nosotros en nuestro día especial.">
-      <meta property="og:type" content="website">
-      <meta property="og:url" content="https://mariacarlosboda.com">
-      
-      <title>Alejandro & Candelaria - Nuestra Boda | 15 de Septiembre 2026</title>
-      
-      <!-- Bootstrap CSS -->
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-      <!-- Google Fonts - Sail -->
-      <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
-      <!-- Google Fonts - Jost -->
-      <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-      <!-- Font Awesome -->
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-      <!-- Swiper CSS -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-      <!-- Styles -->
-      <link href="./css/styles.css" rel="stylesheet">
-      
-  </head>
-  <body>
 
-      <!-- Hero Section -->
-      <section id="inicio" class="hero">
-          <div class="hero-container">
-              <div class="hero-content">
-                  <p class="hero-subtitle">Nos casamos</p>
-                  <h1 class="hero-title font-sail">Alejandro & Candelaria</h1>
-                  <p class="hero-date">15 de Septiembre, 2026</p>
-                  <a href="#rsvp" class="hero-cta">
-                      <i class="fas fa-heart me-2" aria-hidden="true"></i>
-                      Confirma tu Asistencia
-                  </a>
-              </div>
-          </div>
-          
-          <div class="scroll-indicator">
-              <i class="fas fa-chevron-down" aria-hidden="true"></i>
-          </div>
-      </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Alejandro y Candelaria se casan - Página oficial de nuestra boda. Encuentra toda la información sobre nuestra ceremonia, galería de fotos y confirma tu asistencia.">
+  <meta name="keywords" content="boda, matrimonio, Candelaria, Alejandro, ceremonia, invitación, galería, RSVP">
+  <meta name="author" content="Candelaria y Alejandro">
 
-      <!-- Countdown Section -->
-      <section id="cuenta-regresiva" class="countdown-section fade-in">
-                     <!-- Grass images positioned absolutely -->
-           <div class="grass-decoration grass-left">
-               <img src="./images/grass-1.webp" alt="Decoración de pasto" class="grass-image grass-1">
-           </div>
-                       <div class="grass-decoration grass-right">
-                <img src="./images/grass-4.webp" alt="Decoración de pasto" class="grass-image grass-4">
-            </div>
-          
-          <div class="container">
-              <h2 class="section-title font-sail">Faltan</h2>
-              <p class="section-subtitle">
-                  Cada segundo nos acerca más a nuestro gran día
-              </p>
-              
-              <div class="countdown-container" id="countdown">
-                  <div class="countdown-item">
-                      <div class="countdown-number" id="days" aria-label="Días restantes">0</div>
-                      <div class="countdown-label">Días</div>
-                  </div>
-                  <div class="countdown-item">
-                      <div class="countdown-number" id="hours" aria-label="Horas restantes">0</div>
-                      <div class="countdown-label">Horas</div>
-                  </div>
-                  <div class="countdown-item">
-                      <div class="countdown-number" id="minutes" aria-label="Minutos restantes">0</div>
-                      <div class="countdown-label">Minutos</div>
-                  </div>
-                  <div class="countdown-item">
-                      <div class="countdown-number" id="seconds" aria-label="Segundos restantes">0</div>
-                      <div class="countdown-label">Segundos</div>
-                  </div>
-              </div>
-          </div>
-      </section>
+  <!-- Open Graph -->
+  <meta property="og:title" content="María & Carlos - Nuestra Boda">
+  <meta property="og:description"
+    content="Nos casamos y queremos celebrarlo contigo. Únete a nosotros en nuestro día especial.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mariacarlosboda.com">
 
-      <!-- About Section -->
-      <section id="nosotros" class="about-section fade-in">
-          <div class="container">
-              <h2 class="section-title font-sail">Nuestra Historia</h2>
-              <p class="section-subtitle">
-                  Dos corazones que se encontraron y decidieron caminar juntos para siempre
-              </p>
-              
-              <div class="row justify-content-center">
-                  <div class="col-lg-8">
-                      <div class="couple-story">
-                          <p class="couple-names font-sail">María & Carlos</p>
-                          <p>
-                              Nos conocimos hace cinco años en una tarde lluviosa de otoño. Lo que comenzó como una casualidad 
-                              se convirtió en la historia de amor más hermosa que podríamos haber imaginado.
-                          </p>
-                          <p>
-                              Después de compartir aventuras, sueños y construir un futuro juntos, hemos decidido dar el paso 
-                              más importante de nuestras vidas. Queremos que seas parte de este momento especial y compartas 
-                              con nosotros el inicio de nuestro para siempre.
-                          </p>
-                          <p>
-                              <strong>¡Tu presencia haría nuestro día perfecto!</strong>
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
+  <title>Alejandro & Candelaria - Nuestra Boda | 15 de Septiembre 2026</title>
 
-      <!-- Ceremony & Party Section -->
-      <section id="ceremonia" class="ceremony-party-section fade-in">
-          <div class="container text-center">
-              <h2 class="section-title font-sail">Ceremonia y Fiesta</h2>
-              <p class="section-subtitle">Acompáñanos en este momento tan especial y celebremos juntos nuestro amor.</p>
-              
-              <div class="row justify-content-center">
-                  <!-- Columna para la Ceremonia -->
-                  <div class="col-md-6 mb-4">
-                      <div class="detail-category-block">
-                          <h3 class="font-sail mb-3">La Ceremonia</h3>
-                          <div class="detail-item">
-                              <i class="fas fa-calendar-alt icon-detail mb-2"></i>
-                              <h4>Día y Hora</h4>
-                              <p>Sábado 9 de Mayo - 14hs</p>
-                              <a href="#" class="btn-detail-action">Agendar</a>
-                          </div>
-                          <div class="detail-item">
-                              <i class="fas fa-map-marker-alt icon-detail mb-2"></i>
-                              <h4>Lugar</h4>
-                              <p>Parroquia Nuestra Señora de Luján</p>
-                              <a href="#" class="btn-detail-action">¿Cómo llegar?</a>
-                          </div>
-                          <div class="detail-item">
-                              <i class="fas fa-envelope-open-text icon-detail mb-2"></i>
-                              <h4>Confirmación</h4>
-                              <p>Confirma tu asistencia</p>
-                              <a href="#rsvp" class="btn-detail-action">Confirmar asistencia</a>
-                          </div>
-                      </div>
-                  </div>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts - Sail -->
+  <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
+  <!-- Google Fonts - Jost -->
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Styles -->
+  <link href="./css/styles.css" rel="stylesheet">
 
-                  <!-- Columna para la Fiesta -->
-                  <div class="col-md-6 mb-4">
-                      <div class="detail-category-block">
-                          <h3 class="font-sail mb-3">La Fiesta</h3>
-                          <div class="detail-item">
-                              <i class="fas fa-glass-cheers icon-detail mb-2"></i>
-                              <h4>Hora</h4>
-                              <p>Sábado 9 de Mayo - 20hs</p>
-                              <a href="#" class="btn-detail-action">Agendar</a>
-                          </div>
-                          <div class="detail-item">
-                              <i class="fas fa-map-marker-alt icon-detail mb-2"></i>
-                              <h4>Lugar</h4>
-                              <p>Salón de Fiestas Avril</p>
-                              <a href="#" class="btn-detail-action">¿Cómo llegar?</a>
-                          </div>
-                          <div class="detail-item">
-                              <i class="fas fa-envelope-open-text icon-detail mb-2"></i>
-                              <h4>Confirmación</h4>
-                              <p>Confirma tu asistencia</p>
-                              <a href="#rsvp" class="btn-detail-action">Confirmar asistencia</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
+</head>
 
-      <!-- Info Sections (Música, Dress Code, Tips) -->
-      <section id="info-extra" class="info-extra-section fade-in">
-          <div class="container">
-              <div class="row justify-content-center">
-                  <div class="col-md-4 mb-4">
-                      <div class="info-card p-4 text-center h-100">
-                          <h3 class="font-sail">Música</h3>
-                          <p class="mb-3">¿Cuál es la canción que no debe faltar en la PlayList?</p>
-                          <a href="#" class="btn-cta-small">Sugerir canción</a>
-                      </div>
-                  </div>
-                  <div class="col-md-4 mb-4">
-                      <div class="info-card p-4 text-center h-100">
-                          <h3 class="font-sail">Dress Code</h3>
-                          <p class="mb-3">Una orientación para tu vestuario</p>
-                          <a href="#" class="btn-cta-small">Ver más</a>
-                      </div>
-                  </div>
-                  <div class="col-md-4 mb-4">
-                      <div class="info-card p-4 text-center h-100">
-                          <h3 class="font-sail">Tips y Notas</h3>
-                          <p class="mb-3">Información adicional a tener en cuenta</p>
-                          <a href="#" class="btn-cta-small">+ Info</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
+<body>
 
-      <!-- Instagram Section -->
-      <section id="instagram" class="instagram-section fade-in">
-          <div class="container text-center">
-              <h2 class="section-title font-sail">Compartimos este día junto a vos</h2>
-              <p class="section-subtitle mb-4">Compartí tus fotos y videos de ese hermoso día</p>
-              <h3 class="hashtag font-sail mb-4">#AlejandroYCandelaria2026</h3>
-              <a href="#" class="btn-cta">
-                  <i class="fab fa-instagram me-2"></i>
-                  Ver en Instagram
-              </a>
-          </div>
-      </section>
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+     <!-- Spotify -->
+    <div id="music-player" style="position: fixed; top: 20px; left: 20px; z-index: 1000; opacity: 0.8; background: rgba(178, 207, 81, 0.2); border-radius: 10px; padding: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <iframe src="https://open.spotify.com/intl-es/track/4cZd8TSEowGRcDsmCvJEjU?si=sJrsJSHUTIWPYlulWC6chQ&nd=1&dlsi=b6e8bd8afd3a41cc" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  </div>
 
-             <!-- Gifts Section -->
-       <section id="regalos" class="gifts-section fade-in">
-           <!-- Grass decoration for gifts section -->
-           <div class="grass-decoration grass-gifts">
-               <img src="./images/grass-2.webp" alt="Decoración de pasto" class="grass-image grass-2">
-           </div>
-           
-           <div class="container text-center">
-               <h2 class="section-title font-sail">Regalos</h2>
-               <p class="section-subtitle">Si deseas regalarnos algo más que tu hermosa presencia...</p>
-               <a href="#" class="btn-cta">Ver más</a>
-           </div>
-       </section>
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="hero-subtitle">Nos casamos</p>
+        <h1 class="hero-title font-sail">Alejandro & Candelaria</h1>
+        <p class="hero-date">15 de Septiembre, 2026</p>
+        <a href="#" class="btn-cta" data-modal="rsvp">
+          <i class="fas fa-heart me-2" aria-hidden="true"></i>
+          Confirma tu Asistencia
+        </a>
+      </div>
+    </div>
 
-             <!-- Gallery Section -->
-       <section id="galeria" class="gallery-section fade-in">
-           <div class="container">
-               <h2 class="section-title font-sail">Retratos de Nuestro Amor</h2>
-               <p class="section-subtitle">
-                   Un minuto, un segundo, un instante que queda en la eternidad
-               </p>
-              
-              <div class="swiper gallery-swiper">
-                  <div class="swiper-wrapper gallery-grid">
-                      <article class="swiper-slide gallery-item" tabindex="0" role="button" aria-label="Foto de la propuesta">
-                          <img src="./images/galery-1.webp" alt="Foto de la propuesta" class="gallery-img" />
-                      </article>
-                      <article class="swiper-slide gallery-item" tabindex="0" role="button" aria-label="Foto de compromiso">
-                          <img src="./images/galery-2.webp" alt="Foto de compromiso" class="gallery-img" />
-                      </article>
-                      <article class="swiper-slide gallery-item" tabindex="0" role="button" aria-label="Foto de viaje">
-                          <img src="./images/galery-3.webp" alt="Foto de viaje" class="gallery-img" />
-                      </article>
-                      <article class="swiper-slide gallery-item" tabindex="0" role="button" aria-label="Foto celebrando">
-                          <img src="./images/galery-4.webp" alt="Foto celebrando" class="gallery-img" />
-                      </article>
-                      <article class="swiper-slide gallery-item" tabindex="0" role="button" aria-label="Foto de pareja">
-                          <img src="./images/galery-5.webp" alt="Foto de pareja" class="gallery-img" />
-                      </article>
-                  </div>
-                  <!-- Add Arrows -->
-                  <div class="swiper-button-next custom-swiper-next"></div>
-                  <div class="swiper-button-prev custom-swiper-prev"></div>
-              </div>
-              
-              <div class="text-center mt-5">
-                  <p class="text-muted">
-                      <em>Pronto agregaremos más fotos de nuestros momentos favoritos</em>
-                  </p>
-              </div>
-          </div>
-          
-          <div class="grass-decoration grass-gallery">
-            <img src="./images/grass-3.webp" alt="Decoración de pasto" class="grass-image grass-3">
+    <div class="scroll-indicator">
+      <i class="fas fa-chevron-down" aria-hidden="true"></i>
+    </div>
+  </section>
+
+  <!-- Countdown Section -->
+  <section id="cuenta-regresiva" class="countdown-section fade-in">
+    <!-- Grass images positioned absolutely -->
+    <div class="grass-decoration grass-left">
+      <img src="./images/grass-1.webp" alt="Decoración de pasto" class="grass-image grass-1">
+    </div>
+    <div class="grass-decoration grass-right">
+      <img src="./images/grass-4.webp" alt="Decoración de pasto" class="grass-image grass-4">
+    </div>
+
+    <div class="container">
+      <h2 class="section-title font-sail">Faltan</h2>
+      <p class="section-subtitle">
+        Cada segundo nos acerca más a nuestro gran día
+      </p>
+
+      <div class="countdown-container" id="countdown">
+        <div class="countdown-item">
+          <div class="countdown-number" id="days" aria-label="Días restantes">0</div>
+          <div class="countdown-label">Días</div>
         </div>
-      </section>
+        <div class="countdown-item">
+          <div class="countdown-number" id="hours" aria-label="Horas restantes">0</div>
+          <div class="countdown-label">Horas</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-number" id="minutes" aria-label="Minutos restantes">0</div>
+          <div class="countdown-label">Minutos</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-number" id="seconds" aria-label="Segundos restantes">0</div>
+          <div class="countdown-label">Segundos</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <!-- CTA Section -->
-      <section id="rsvp" class="cta-section fade-in">
-          <div class="container">
-              <div class="cta-content">
-                  <h2 class="font-sail">¿Nos acompañarás?</h2>
-                  <p>
-                      Tu presencia es el mejor regalo que podríamos recibir. 
-                      Por favor, confirma tu asistencia antes del 1 de septiembre.
-                  </p>
-                  <a href="rsvp.html" class="btn-cta">
-                      <i class="fas fa-envelope me-2" aria-hidden="true"></i>
-                      Confirmar Asistencia
-                  </a>
-              </div>
+  <!-- About Section -->
+  <section id="nosotros" class="about-section fade-in">
+    <div class="container">
+      <h2 class="section-title font-sail">Nuestra Historia</h2>
+      <p class="section-subtitle">
+        Dos corazones que se encontraron y decidieron caminar juntos para siempre
+      </p>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="couple-story">
+            <p class="couple-names font-sail">María & Carlos</p>
+            <p>
+              Nos conocimos hace cinco años en una tarde lluviosa de otoño. Lo que comenzó como una casualidad
+              se convirtió en la historia de amor más hermosa que podríamos haber imaginado.
+            </p>
+            <p>
+              Después de compartir aventuras, sueños y construir un futuro juntos, hemos decidido dar el paso
+              más importante de nuestras vidas. Queremos que seas parte de este momento especial y compartas
+              con nosotros el inicio de nuestro para siempre.
+            </p>
+            <p>
+              <strong>¡Tu presencia haría nuestro día perfecto!</strong>
+            </p>
           </div>
-      </section>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <!-- Footer -->
-      <footer class="footer">
-          <div class="container">
-              <div class="footer-content">
-                  <h3 class="footer-title font-sail">Alejandro & Candelaria</h3>
-                  <p>
-                      Gracias por formar parte de nuestro camino hacia el altar.<br>
-                      ¡Esperamos celebrar contigo el 9 de Mayo!
-                  </p>
-                  
-                  <div class="social-links">
-                      <a href="#" aria-label="Instagram" title="Síguenos en Instagram">
-                          <i class="fab fa-instagram" aria-hidden="true"></i>
-                      </a>
-                      <a href="#" aria-label="Facebook" title="Síguenos en Facebook">
-                          <i class="fab fa-facebook" aria-hidden="true"></i>
-                      </a>
-                      <a href="mailto:contacto@mariacarlosboda.com" aria-label="Email" title="Envíanos un email">
-                          <i class="fas fa-envelope" aria-hidden="true"></i>
-                      </a>
-                      <a href="tel:+1234567890" aria-label="Teléfono" title="Llámanos">
-                          <i class="fas fa-phone" aria-hidden="true"></i>
-                      </a>
-                  </div>
-              </div>
-              
-              <div class="footer-bottom">
-                  <p>&copy; 2026 Alejandro & Candelaria. Hecho con <i class="fas fa-heart" style="color: var(--primary-gold);" aria-hidden="true"></i> para nuestro día especial.</p>
-              </div>
+  <!-- Ceremony & Party Section -->
+  <section id="ceremonia" class="ceremony-party-section fade-in">
+    <div class="container text-center">
+      <h2 class="section-title font-sail">Ceremonia y Fiesta</h2>
+      <p class="section-subtitle">Acompáñanos en este momento tan especial y celebremos juntos nuestro amor.</p>
+
+      <div class="row justify-content-center">
+        <!-- Columna para la Ceremonia -->
+        <div class="col-md-6 mb-4">
+          <div class="detail-category-block">
+            <h3 class="font-sail mb-3">La Ceremonia</h3>
+            <div class="detail-item">
+              <i class="fas fa-calendar-alt icon-detail mb-2"></i>
+              <h4>Día y Hora</h4>
+              <p>Sábado 9 de Mayo - 14hs</p>
+              <a href="#" data-modal="agendar" class="btn-detail-action">Agendar</a>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-map-marker-alt icon-detail mb-2"></i>
+              <h4>Lugar</h4>
+              <p>Parroquia Nuestra Señora de Luján</p>
+              <a href="#" data-modal="llegar" class="btn-detail-action">¿Cómo llegar?</a>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-envelope-open-text icon-detail mb-2"></i>
+              <h4>Confirmación</h4>
+              <p>Confirma tu asistencia</p>
+              <a href="#" data-modal="rsvp" class="btn-detail-action">Confirmar asistencia</a>
+            </div>
           </div>
-      </footer>
+        </div>
 
-      <!-- Bootstrap JavaScript -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-      <!-- Swiper JS -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <!-- Custom JavaScript -->
-      <script src="./js/main.js"></script>
-  </body>
+        <!-- Columna para la Fiesta -->
+        <div class="col-md-6 mb-4">
+          <div class="detail-category-block">
+            <h3 class="font-sail mb-3">La Fiesta</h3>
+            <div class="detail-item">
+              <i class="fas fa-glass-cheers icon-detail mb-2"></i>
+              <h4>Hora</h4>
+              <p>Sábado 9 de Mayo - 20hs</p>
+              <a href="#" data-modal="agendar" class="btn-detail-action">Agendar</a>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-map-marker-alt icon-detail mb-2"></i>
+              <h4>Lugar</h4>
+              <p>Salón de Fiestas Avril</p>
+              <a href="#" data-modal="llegar" class="btn-detail-action">¿Cómo llegar?</a>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-envelope-open-text icon-detail mb-2"></i>
+              <h4>Confirmación</h4>
+              <p>Confirma tu asistencia</p>
+              <a href="#" data-modal="rsvp" class="btn-detail-action">Confirmar asistencia</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Sections (Música, Dress Code, Tips) -->
+  <section id="info-extra" class="info-extra-section fade-in">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+          <div class="info-card p-4 text-center h-100">
+            <h3 class="font-sail">Música</h3>
+            <p class="mb-3">¿Cuál es la canción que no debe faltar en la PlayList?</p>
+            <a href="#" class="btn-cta-small" data-modal="musica">Sugerir canción</a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="info-card p-4 text-center h-100">
+            <h3 class="font-sail">Dress Code</h3>
+            <p class="mb-3">Una orientación para tu vestuario</p>
+            <a href="#" class="btn-cta-small" data-modal="dresscode">Ver más</a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="info-card p-4 text-center h-100">
+            <h3 class="font-sail">Tips y Notas</h3>
+            <p class="mb-3">Información adicional a tener en cuenta</p>
+            <a href="#" class="btn-cta-small" data-modal="tips">+ Info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gifts Section -->
+  <section id="regalos" class="gifts-section fade-in">
+    <!-- Grass decoration for gifts section -->
+    <div class="grass-decoration grass-gifts">
+      <img src="./images/grass-2.webp" alt="Decoración de pasto" class="grass-image grass-2">
+    </div>
+
+    <div class="container text-center">
+      <h2 class="section-title font-sail">Regalos</h2>
+      <p class="section-subtitle">Si deseas regalarnos algo más que tu hermosa presencia...</p>
+      <a href="#" class="btn-cta">Ver más</a>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="galeria" class="gallery-section fade-in">
+    <div class="container">
+      <h2 class="section-title font-sail">Retratos de Nuestro Amor</h2>
+      <p class="section-subtitle">
+        Un minuto, un segundo, un instante que queda en la eternidad
+      </p>
+
+      <div class="swiper gallery-swiper">
+        <div class="gallery-grid" style="display: flex; transition: transform 0.5s ease; width: calc(100% * 5);"> <!-- '5' número de items -->
+          <article class="swiper-slide gallery-item" tabindex="0" role="button" aria-label="Foto de la propuesta">
+            <img src="./images/galery-1.webp" alt="Foto de la propuesta" class="gallery-img" />
+          </article>
+          <article class="swiper-slide gallery-item" tabindex="0" role="button" aria-label="Foto de compromiso">
+            <img src="./images/galery-2.webp" alt="Foto de compromiso" class="gallery-img" />
+          </article>
+          <article class="swiper-slide gallery-item" tabindex="0" role="button" aria-label="Foto de viaje">
+            <img src="./images/galery-3.webp" alt="Foto de viaje" class="gallery-img" />
+          </article>
+          <article class="swiper-slide gallery-item" tabindex="0" role="button" aria-label="Foto celebrando">
+            <img src="./images/galery-4.webp" alt="Foto celebrando" class="gallery-img" />
+          </article>
+          <article class="swiper-slide gallery-item" tabindex="0" role="button" aria-label="Foto de pareja">
+            <img src="./images/galery-5.webp" alt="Foto de pareja" class="gallery-img" />
+          </article>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next custom-swiper-next"></div>
+        <div class="swiper-button-prev custom-swiper-prev"></div>
+      </div>
+
+      <div class="text-center mt-5">
+        <p class="text-muted">
+          <em>Pronto agregaremos más fotos de nuestros momentos favoritos</em>
+        </p>
+      </div>
+    </div>
+
+    <div class="grass-decoration grass-gallery">
+      <img src="./images/grass-3.webp" alt="Decoración de pasto" class="grass-image grass-3">
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="rsvp" class="cta-section fade-in">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="font-sail">¿Nos acompañarás?</h2>
+        <p>
+          Tu presencia es el mejor regalo que podríamos recibir.
+          Por favor, confirma tu asistencia antes del 1 de septiembre.
+        </p>
+        <a href="#" class="btn-cta" data-modal="rsvp">
+          <i class="fas fa-envelope me-2" aria-hidden="true"></i>
+          Confirmar Asistencia
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <h3 class="footer-title font-sail">Alejandro & Candelaria</h3>
+        <p>
+          Gracias por formar parte de nuestro camino hacia el altar.<br>
+          ¡Esperamos celebrar contigo el 9 de Mayo!
+        </p>
+
+        <div class="social-links">
+          <a href="#" aria-label="Instagram" title="Síguenos en Instagram">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="#" aria-label="Facebook" title="Síguenos en Facebook">
+            <i class="fab fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:contacto@mariacarlosboda.com" aria-label="Email" title="Envíanos un email">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+          </a>
+          <a href="tel:+1234567890" aria-label="Teléfono" title="Llámanos">
+            <i class="fas fa-phone" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Alejandro & Candelaria. Hecho con <i class="fas fa-heart" style="color: var(--primary-gold);"
+            aria-hidden="true"></i> para nuestro día especial.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODALES -->
+
+  <!-- Modal RSVP -->
+  <div class="modal-overlay" id="modal-rsvp">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('rsvp')">&times;</button>
+      <h2 class="modal-title font-sail">Confirmar Asistencia</h2>
+      <form id="form-rsvp">
+        <div class="form-group">
+          <label class="form-label">Tu nombre completo</label>
+          <input type="text" class="form-control" id="nombre" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">¿Asistirás a la ceremonia?</label>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="asistire-si" name="asistencia" value="si" required>
+            <label for="asistire-si">Sí, asistiré</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="asistire-no" name="asistencia" value="no">
+            <label for="asistire-no">No podré asistir</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">¿Cuántas personas asistirán? (incluyéndote)</label>
+          <select class="form-control" id="cantidad">
+            <option value="1">1 persona</option>
+            <option value="2">2 personas</option>
+            <option value="3">3 personas</option>
+            <option value="4">4 personas</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Mensaje especial (opcional)</label>
+          <textarea class="form-control" rows="3" placeholder="Comparte tus felicitaciones..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal para Agendar (Ceremonia/Fiesta) -->
+  <div id="modal-agendar" class="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('agendar')">&times;</button>
+      <h2 class="modal-title">Agendar Evento</h2>
+      <p>Agrega la ceremonia o fiesta a tu calendario:</p>
+      <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Matrimonio+Alejandro+y+Candelaria&dates=20260915T180000/20260915T220000&location=Parroquia+Nuestra+Señora+de+Luján"
+        target="_blank" class="btn-primary">Agregar a Google Calendar</a>
+    </div>
+  </div>
+
+  <!-- Modal para Cómo Llegar (Ceremonia/Fiesta) -->
+  <div id="modal-llegar" class="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('llegar')">&times;</button>
+      <h2 class="modal-title">¿Cómo Llegar?</h2>
+      <p>Direcciones al lugar:</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016713803596!2d-58.38155948477051!3d-34.603734880459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d94d231565%3A0x97b0d38ca3e0f457!2sParroquia+Nuestra+Se%C3%B1ora+de+Luj%C3%A1n!5e0!3m2!1ses!2sar!4v1630000000000"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Parroquia+Nuestra+Señora+de+Luján" target="_blank"
+        class="btn-primary">Obtener Indicaciones</a>
+    </div>
+  </div>
+
+  <!-- Modal Música -->
+  <div class="modal-overlay" id="modal-musica">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('musica')">&times;</button>
+      <h2 class="modal-title font-sail">Sugerir Canción</h2>
+      <form id="form-musica">
+        <div class="form-group">
+          <label class="form-label">Tu nombre</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Canción sugerida</label>
+          <input type="text" class="form-control" placeholder="Nombre de la canción" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Artista</label>
+          <input type="text" class="form-control" placeholder="Nombre del artista" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">¿Por qué esta canción?</label>
+          <textarea class="form-control" rows="3" placeholder="Cuéntanos por qué elegiste esta canción..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Enviar Sugerencia</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal Dress Code -->
+  <div class="modal-overlay" id="modal-dresscode">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('dresscode')">&times;</button>
+      <h2 class="modal-title font-sail">Dress Code</h2>
+      <p>Para que todos nos veamos increíbles, aquí tienes algunas sugerencias de vestuario:</p>
+
+      <div class="dress-code-info">
+        <div class="dress-code-item">
+          <h4>Para Ellas</h4>
+          <p>Vestidos en tonos pastel o colores tierra. Evita el blanco y el negro total.</p>
+        </div>
+        <div class="dress-code-item">
+          <h4>Para Ellos</h4>
+          <p>Traje o camisa con pantalón elegante en colores neutros. Corbata opcional.</p>
+        </div>
+      </div>
+
+      <div style="margin-top: 2rem; padding: 1.5rem; background: var(--light-cream); border-radius: 15px;">
+        <h4 style="color: var(--primary-gold); margin-bottom: 1rem;">Recomendaciones generales:</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li>🌿 Colores recomendados: verde, beige, crema, dorado</li>
+          <li>🌿 La ceremonia será al aire libre</li>
+          <li>🌿 Considera zapatos cómodos para césped</li>
+          <li>🌿 No olvides una chaqueta para la noche</li>
+        </ul>
+      </div>
+
+      <button class="btn-secondary" onclick="closeModal('dresscode')">Entendido</button>
+    </div>
+  </div>
+
+  <!-- Modal Tips -->
+  <div class="modal-overlay" id="modal-tips">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('tips')">&times;</button>
+      <h2 class="modal-title font-sail">Tips y Notas Importantes</h2>
+
+      <ul class="tips-list">
+        <li><strong>Horarios:</strong> La ceremonia inicia puntualmente a las 18:00hs. Te sugerimos llegar 15 minutos
+          antes.</li>
+        <li><strong>Ubicación:</strong> El evento será completamente al aire libre. Habrá carpas en caso de lluvia.</li>
+        <li><strong>Estacionamiento:</strong> Hay espacio disponible en el lugar. Llegada por Av. Principal 123.</li>
+        <li><strong>Niños:</strong> Los niños son bienvenidos. Habrá un espacio especial para ellos durante la fiesta.
+        </li>
+        <li><strong>Fotografías:</strong> Habrá fotógrafo profesional. También puedes usar nuestro hashtag para
+          compartir tus fotos.</li>
+        <li><strong>Regalos:</strong> Tu presencia es nuestro mejor regalo. Si deseas obsequiarnos algo, revisa la
+          sección de regalos.</li>
+        <li><strong>Contacto:</strong> Para cualquier duda, puedes escribirnos por WhatsApp al +54 11 1234-5678.</li>
+      </ul>
+
+      <button class="btn-secondary" onclick="closeModal('tips')">Perfecto</button>
+    </div>
+  </div>
+
+  <!-- Modal Success (para mostrar después de enviar formularios) -->
+  <div class="modal-overlay" id="modal-success">
+    <div class="modal-content">
+      <div class="success-message">
+        <div class="checkmark">✓</div>
+        <h2 class="modal-title font-sail">¡Perfecto!</h2>
+        <p id="success-text">Tu mensaje ha sido enviado correctamente. ¡Gracias!</p>
+        <button class="btn-primary" onclick="closeModal('success')">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="./js/main.js"></script>
+</body>
+
 </html>

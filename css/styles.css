@@ -1,12 +1,13 @@
 :root {
-    --primary-gold: #d4af37;
-    --secondary-brown: #8b6f47;
-    --cream-bg: #f8f6f3;
-    --light-cream: #faf9f7;
+    --primary-gold: #b2cf51;
+    --secondary-brown: #97be0d;
+    --cream-bg: #f5f7f0;
+    --light-cream: #fafbf8;
     --text-dark: #2c2c2c;
     --text-medium: #5a5a5a;
     --text-light: #888;
     --white: #ffffff;
+    --accent-green: #bdd670;
 }
 
 * {
@@ -258,13 +259,20 @@ body {
     width: 100%;
     height: 100%;
     padding-bottom: 3rem;
+    overflow: visible;
 }
 
 .gallery-grid {
-    width: 100%;
-    height: 100%;
     display: flex;
-    align-items: center;
+    transition: transform 0.5s ease;
+    gap: 30px; /* Ajusta basado en breakpoints */
+}
+
+@media (max-width: 1024px) {
+    .gallery-grid { gap: 20px; }
+}
+@media (max-width: 768px) {
+    .gallery-grid { gap: 10px; }
 }
 
 .gallery-item {
@@ -317,17 +325,19 @@ body {
 /* Estilos para las flechas de navegación de Swiper */
 .swiper-button-next, .swiper-button-prev {
     color: var(--primary-gold);
-    background-color: var(--white); 
+    background-color: var(--white);
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    z-index: 10;
 }
 
 .swiper-button-next:hover, .swiper-button-prev:hover {
-    background-color: var(--secondary-brown); 
+    background-color: var(--primary-gold);
     color: var(--white);
+    transform: scale(1.1);
 }
 
 .swiper-button-prev {
@@ -532,13 +542,29 @@ body {
 /* Gifts Section */
 .gifts-section {
     padding: 6rem 0;
-    background-color: var(--cream-bg);
-    color: var(--text-dark);
+    background: linear-gradient(rgba(45, 80, 22, 0.7), rgba(45, 80, 22, 0.7)), 
+                url('../images/gifts-back.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
 }
 
 .gifts-section .section-title,
 .gifts-section .section-subtitle {
-    color: var(--secondary-brown);
+    color: var(--white);
+}
+
+.gifts-section .btn-cta {
+    background: var(--white);
+    color: var(--primary-gold);
+}
+
+.gifts-section .btn-cta:hover {
+    background: var(--light-cream);
+    color: var(--primary-gold);
 }
 
 .gallery-item {
@@ -930,5 +956,236 @@ html {
     .grass-3 {
         bottom: 0;
         left: -10px;
+    }
+}
+
+/* Prevenir overflow */
+
+html, body {
+    overflow-x: hidden;
+}
+
+.container-fluid, .container {
+    overflow-x: hidden;
+}
+
+.hero, .countdown-section, .gifts-section, .gallery-section {
+    overflow-x: hidden;
+}
+
+/* MODAL STYLES */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 3rem;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    transform: scale(0.7);
+    transition: transform 0.3s ease;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.modal-overlay.active .modal-content {
+    transform: scale(1);
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    padding-bottom: 90px;
+    font-size: 2rem;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+    color: var(--primary-gold);
+}
+
+@media (max-width: 768px) {
+    .modal-close {
+        padding: 1rem;
+        font-size: 2.5rem;
+    }
+    
+    .modal-title {
+        margin-top: 2rem;
+    }
+}
+
+.modal-title {
+    font-size: 2rem;
+    color: var(--primary-gold);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--primary-gold);
+    box-shadow: 0 0 0 3px rgba(45, 80, 22, 0.1);
+}
+
+.form-check {
+    margin-bottom: 1rem;
+}
+
+.form-check-input {
+    margin-right: 0.5rem;
+}
+
+.btn-primary {
+    background: var(--primary-gold);
+    color: var(--white);
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background: var(--secondary-brown);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--text-medium);
+    padding: 0.75rem 2rem;
+    border: 2px solid var(--text-light);
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.btn-secondary:hover {
+    border-color: var(--primary-gold);
+    color: var(--primary-gold);
+}
+
+/* Styles específicos para cada modal */
+.dress-code-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.dress-code-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--light-cream);
+    border-radius: 15px;
+}
+
+.dress-code-item h4 {
+    color: var(--primary-gold);
+    margin-bottom: 1rem;
+}
+
+.tips-list {
+    list-style: none;
+    padding: 0;
+}
+
+.tips-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.tips-list li:before {
+    content: "🌿";
+    position: absolute;
+    left: 0;
+    top: 1rem;
+}
+
+.tips-list li:last-child {
+    border-bottom: none;
+}
+
+/* Success message */
+.success-message {
+    text-align: center;
+    padding: 2rem;
+}
+
+.success-message .checkmark {
+    font-size: 4rem;
+    color: var(--accent-green);
+    margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 2rem;
+        margin: 1rem;
+    }
+    
+    .dress-code-info {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 }
